@@ -14,18 +14,31 @@ export default function Content() {
 			</div>
 
 			<div className="credits">
-				Inspired by: <a href="https://www.awwwards.com/0ca0a/">0ca0a</a>
+				Inspired by:{" "}
+				<a target="_blank" href="https://www.awwwards.com/0ca0a/">
+					0ca0a
+				</a>
 			</div>
 			<div className="links">
-				<a href="">Portfolio website</a>
+				<a target="_blank" href="">
+					Portfolio website
+				</a>
 				<br />
-				<a href="">Curriculum Vitae</a>
+				<a target="_blank" href="">
+					Curriculum Vitae
+				</a>
 				<br />
-				<a href="">LinkedIn</a>
+				<a target="_blank" href="">
+					LinkedIn
+				</a>
 				<br />
-				<a href="">Github</a>
+				<a target="_blank" href="">
+					Github
+				</a>
 				<br />
-				<a href="">Favorite song </a>
+				<a target="_blank" href="">
+					Favorite song{" "}
+				</a>
 				<br />
 			</div>
 		</div>
