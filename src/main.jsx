@@ -52,7 +52,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 				{/* <ambientLight intensity={0.5} /> */}
 
 				<App />
-				<EffectComposer>
+				<EffectComposer multisampling={0}>
 					<DepthOfField
 						target={[0, 0, 60]}
 						focalLength={1}
