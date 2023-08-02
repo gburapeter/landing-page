@@ -1,18 +1,23 @@
 * {
 	box-sizing: border-box;
 	text-decoration: none;
-
 }
 
 a:hover {
 	/* font-style: italic; */
-	
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 13%, rgba(150,110,7,1) 49%, rgba(0,0,0,1) 87%, rgba(0,0,0,1) 100%);
+
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgb(123, 110, 16) 13%,
+		rgb(205, 180, 41) 49%,
+		rgb(123, 110, 16) 87%,
+		rgba(0, 0, 0, 1) 100%
+	);
 	-webkit-background-clip: text;
 	background-color: text;
 	-webkit-text-fill-color: transparent;
-
 }
 html,
 body,
