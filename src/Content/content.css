@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap");
+
 .container {
 	font-size: 16px;
+	font-family: "Newsreader", serif;
 }
 
 .personalName {
@@ -36,6 +39,4 @@ h2 {
 	letter-spacing: -0.01em;
 	text-align: right;
 	font-size: max(1.5vw, 16px);
-	
 }
-
