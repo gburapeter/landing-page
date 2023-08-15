@@ -41,7 +41,7 @@ export default function Content() {
 					Péter
 				</h2>
 
-				<div className="group relative cursor-pointer transition ease-in-out duration-500 hover:scale-105">
+				<div className="group  w-min relative cursor-pointer transition ease-in-out duration-500 hover:scale-105">
 					<div className=" flex items-center relative">
 						{contentResultTop}
 						<div className="  absolute bottom-0 left-0 flex items-center">
