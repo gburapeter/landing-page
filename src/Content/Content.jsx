@@ -1,6 +1,36 @@
+import { useState } from "react";
 import "./content.css";
 
 export default function Content() {
+	// const [role, setRole] = useState("Full-stack developer");
+	const role = "Full-stack developer";
+	const contentResultTop = [];
+	const contentResultBottom = [];
+
+	[...role].forEach((letter, index) => {
+		let delay = index * 45;
+		contentResultTop.push(
+			<div
+				key={index}
+				className="origin-top transition-transform duration-300 ease-in-out
+				group-hover:scale-y-0"
+				style={{ transitionDelay: `${delay}ms`, whiteSpace: "pre" }}
+			>
+				{letter}
+			</div>
+		);
+
+		contentResultBottom.push(
+			<div
+				key={index}
+				className="origin-bottom transition-transform duration-300 ease-in-out scale-y-0 group-hover:scale-y-100"
+				style={{ transitionDelay: `${delay}ms`, whiteSpace: "pre" }}
+			>
+				{letter}
+			</div>
+		);
+	});
+
 	return (
 		<div className="container">
 			{/* Personal info */}
@@ -10,7 +40,15 @@ export default function Content() {
 					<br />
 					Péter
 				</h2>
-				<p>Full-stack developer</p>
+
+				<div className="group relative cursor-pointer transition ease-in-out duration-500 hover:scale-105">
+					<div className=" flex items-center relative">
+						{contentResultTop}
+						<div className="  absolute bottom-0 left-0 flex items-center">
+							{contentResultBottom}
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div className="credits">
